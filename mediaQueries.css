@@ -1,0 +1,77 @@
+@media screen and (max-width: 940px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-text {
+    text-align: center;
+    width: 90%;
+    
+  }
+  .left-text h1 {
+  margin-top:10px ;
+    font-size: 2.5rem;
+  }
+  .left-text p {
+    font-size: 1.2rem;
+    color: rgb(199, 199, 199);
+    margin-top: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+  .right-grid-box{
+    background-color: rgb(56, 177, 123);
+    border-radius: 10px;
+    width: 80%;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 80px;
+}
+.box:hover{
+    font-size: 1.7rem;
+}
+
+}
+
+@media screen and (max-width: 520px){
+    .right-grid-box{
+        position: relative;
+         width: 90%;
+        grid-auto-rows: 60px;
+    }
+    .left-text h1{
+        font-size: 2.1rem;
+    }
+    
+    .box{
+        transition: 1.3s ease-in-out;
+        font-weight: 500;
+    }
+    .box:hover{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 377px){
+    .container{
+        height:107vh;
+        }
+        .left-text h1{
+            font-size: 2rem;
+        }
+        .left-text p{
+            font-size:0.8rem
+        }
+        .box{
+            transition: 1.3s ease-in-out;
+            font-weight: 400;
+            font-size:0.5rem
+        }
+        .box:hover{
+            font-size: 0.8rem;
+        }
+}
+
+
+
+
